@@ -1,0 +1,92 @@
+//about section starts here
+
+.about {
+    background-color: #fafafa;
+    padding: 200px 0;
+    display: flex;
+    align-items: center;
+}
+
+.about__wrapper {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.about__innerWrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.about__container {
+    background-color: #6e7185;
+    min-height: 450px;
+    position: relative;
+    background-image: url('./../../public/assets/headshot.jpeg');
+    background-size: cover;
+    background-position: center;
+    min-width: 350px;
+}
+
+.about__content {
+    width: 150%;
+    background-color: white;
+    position: absolute;
+    right: -120%;
+    bottom: -50px;
+    min-height: 200px;
+    padding: 30px;
+    box-shadow: 25px 45px 50px 0px rgba(11, 13, 21, 0.1); 
+}
+
+.about__title {
+    font-size: 3rem;
+    margin: 0 0 30px 0;
+    font-family: Butler;
+}
+
+.about__description {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+}
+
+.about__sideContent {
+    width: 35%;
+    position: relative;
+}
+
+.about__sideContentParagraph {
+    position: absolute;
+    bottom: 0;
+    z-index: -1;
+}
+
+//responsive
+
+@media (max-width: 1300px) {
+    .about__wrapper {
+        width: 90%;
+    }
+}
+
+@media (max-width: 950px) {
+    .about__innerWrapper {
+        justify-content: center;
+    }
+
+    .about__content {
+        width: 100%;
+        right: 0;
+    }
+
+    .about__sideContent {
+        display: none;
+    }
+}
+
+@media (max-width: 400px) {
+    .about__container {
+        min-width: 280px;
+    }
+}
+

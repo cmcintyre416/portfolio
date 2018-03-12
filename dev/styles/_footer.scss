@@ -1,0 +1,195 @@
+.footer {
+    background: linear-gradient(to right, #2d2841 20%, #080d23 100%, transparent); 
+    min-height: 300px;
+    color: white;
+}
+
+.footer__wrapper {
+    width: 70%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.footer__socialList {
+    margin: 0;
+}
+
+.footer__formCard {
+    position: absolute;
+    background: white;
+    width: 100%;
+    left: 50%;
+    transform:translateX(-50%);
+    padding: 20px 50px;
+    top: -220px;
+    color: black;
+    box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.2);
+    display: flex;
+}
+
+.footer__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+}
+
+.footer__formTitle {
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 30px 0 10px 0;
+}
+
+.footer__formBlurb {
+    text-align: center;
+}
+
+.footer__formInputWrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 60%;
+}
+
+.footer__input {
+    border: none;
+    border-bottom: 1px solid rgba(145, 146, 164, 0.3);
+    font-size: 1.5rem;
+}
+
+.footer__input--half {
+    width: 48%;
+}
+
+.footer__input--full {
+    width: 60%;
+    margin: 20px 0;
+    min-height: 50px;
+    resize: none;
+}
+
+.footer__formBlurb {
+    padding: 0;
+    margin-bottom: 50px;
+    color: rgb(101, 101, 101);
+    font-size: 1.5rem;
+}
+
+.footer__submit {
+    background-color:#000000;
+    width: 200px;
+    height: 50px;
+    border: none;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin: 20px;
+}
+
+.footer__submit:hover {
+   background-color:#ff1d5d; 
+}
+
+.footer__social {
+    width: 35%;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__contactTitles {
+    font-size: 2.5rem;
+    margin: 30px 0 30px 0;
+}
+
+.footer__socialList {
+    list-style: none;
+    display: flex;
+    margin-top: 60px;
+    padding-left: 0;
+}
+
+.footer__emailWrapper {
+    display: flex;
+    color: rgb(101, 101, 101);
+    flex-direction: column;
+
+    .footer__contactEmail {
+        margin: 0;
+        font-size: 1.5rem;
+    }
+
+    .fa-envelope {
+        margin-right: 10px;
+        color: black;
+    }
+
+    
+}
+
+.footer__emailBlurb {
+    margin-bottom: 30px;
+}
+
+.footer__socialLink {
+    color: black;
+    font-size: 2rem;
+    margin: 0 15px;
+}
+
+.footer__socialLink:hover {
+   color: #ff1d5d;
+}
+
+//responsive 
+
+@media (max-width: 1300px) {
+    .footer__wrapper {
+        width: 90%;
+    }
+}
+
+@media (max-width: 750px) {
+    .footer__formCard {
+        padding: 20px;
+        flex-direction: column-reverse;
+    }
+
+    .footer__form {
+        width: 100%;
+    }
+
+    .footer__social {
+        width: 100%;
+        border-top: 1px solid rgba(145, 146, 164, 0.3);
+        align-items: center;
+    }
+
+    .footer__formBlurb {
+        width: 70%;
+        margin-bottom: 20px;
+    }
+
+    .footer {
+        min-height: 650px;
+    }
+
+    .footer__input--full {
+        width: 90%;
+    }
+
+    .footer__formInputWrapper {
+        width: 90%;
+        flex-direction: column;
+    }
+
+    .footer__input--half {
+        width: 90%;
+        margin: 20px 0;
+    }
+
+    .footer__contactEmail {
+        text-align: center;
+    }
+
+}

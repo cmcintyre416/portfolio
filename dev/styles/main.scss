@@ -1,0 +1,29 @@
+@import 'setup';
+@import './header';
+@import './about';
+@import './skills';
+@import './project';
+@import './footer';
+@font-face { font-family: Butler; font-weight: bold;src: url('./../../public/fonts/Butler/Butler_Bold.otf');}
+@font-face { font-family: Butler; src: url('./../../public/fonts/Butler/Butler_Regular.otf');}  
+@font-face { font-family: CerebriSans; src: url('./../../public/fonts/CerebriSans/CerebriSans-Regular.otf');}
+@font-face { font-family: CerebriSans; font-weight: bold;src: url('./../../public/fonts/CerebriSans/CerebriSans-Bold.otf');}
+
+
+html {
+	font-size: 10px;
+}
+
+body {
+	font-size: 1rem;
+	font-family: CerebriSans;
+}
+
+a {
+	text-decoration: none;
+	color: white;
+}
+
+button {
+	font-size: 1.5rem;
+}
